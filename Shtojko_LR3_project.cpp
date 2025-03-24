@@ -9,12 +9,10 @@ double getInputInBytes() {
     return bytes;
 }
 
-// Функция перевода байтов в мегабайты
 double convertToMegabytes(double bytes) {
     return bytes / (1024 * 1024);
 }
 
-// Функция перевода байтов в гигабайты
 double convertToGigabytes(double bytes) {
     return bytes / (1024 * 1024 * 1024);
 }
@@ -33,7 +31,7 @@ int main() {
         int choice;
         cin >> choice;
         
-        static double bytes = 0; // Сохраняем введенное значение между вызовами
+        static double bytes = 0; 
         
         switch (choice) {
             case 1:
